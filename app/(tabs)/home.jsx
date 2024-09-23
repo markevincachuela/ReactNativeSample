@@ -2,6 +2,7 @@
  import React from 'react'
 import Header from '../../components/HomeScreen/Header';
 import Slider from '../../components/HomeScreen/Slider';
+import Category from '../../components/HomeScreen/Category';
  
  export default function home() {
 
@@ -10,6 +11,7 @@ import Slider from '../../components/HomeScreen/Slider';
      <View>
         <Header/>
         <Slider/>
+        <Category/>
      </View>
    )
  }

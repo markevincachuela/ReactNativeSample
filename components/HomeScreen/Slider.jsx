@@ -39,7 +39,8 @@ const [sliderList,setSliderlist] = useState([]);
         horizontal = {true}
         showsHorizontalScrollIndicator = {false}
         style = {{
-          paddingLeft: 20
+          paddingLeft: 20,
+          marginTop: 10
         }}
         renderItem={({item,index}) =>(
           <Image source ={{uri:item.imageUrl}} 
