@@ -1,18 +1,26 @@
- import { View, Text, StyleSheet } from 'react-native'
+ import { View, Text, StyleSheet, ScrollView } from 'react-native'
  import React from 'react'
 import Header from '../../components/HomeScreen/Header';
 import Slider from '../../components/HomeScreen/Slider';
 import Category from '../../components/HomeScreen/Category';
+import DragonballList from '../../components/HomeScreen/DragonballList';
  
  export default function home() {
 
 
    return (
-     <View>
+     <ScrollView>
         <Header/>
         <Slider/>
         <Category/>
-     </View>
+        <DragonballList/>
+
+        <View style ={{
+            height: 50
+        }}>
+
+        </View>
+     </ScrollView>
    )
  }
 
