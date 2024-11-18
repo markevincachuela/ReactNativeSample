@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import {Colors} from './../../constants/Colors'
 import { collection, getDocs, query } from 'firebase/firestore'
 import { db } from '../../config/FirebaseConfig'
-import DragonBallCard from './DragonBallCard'
+import DragonBallCardItem from './DragonBallCardItem'
 
 export default function DragonballList() {
 
@@ -49,9 +49,9 @@ export default function DragonballList() {
                 horizontal = {true}
                 showsHorizontalScrollIndicator = {false}
                 renderItem={({item,index})=>(
-                    <DragonBallCard
+                    <DragonBallCardItem
                     key = {index}
-                    dragonball = {item}
+                    dragonballItem = {item}
                     />
                 )}
                 />
