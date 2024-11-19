@@ -1,8 +1,7 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
 
-export default function DragonBallCard({dragonball}) {
-    console.log("kevss  " + dragonball?.imageUrl);
+export default function DragonBallCardItem({dragonballItem}) {
   return (
     <View style ={{
         marginLeft: 15,
@@ -17,7 +16,7 @@ export default function DragonBallCard({dragonball}) {
                 borderRadius: 15
             
             }}
-            source={{uri:dragonball?.imageUrl}}
+            source={{uri:dragonballItem?.imageUrl}}
             >
         </Image>
         <View style = {{
@@ -28,13 +27,13 @@ export default function DragonBallCard({dragonball}) {
                 fontSize: 15,
                 color: '#fff',
                 textAlign: 'center',
-            }}>{dragonball.name}</Text>
+            }}>{dragonballItem.name}</Text>
 
             <Text style ={{
                 fontSize: 15,
                 color: '#fff',
                 textAlign: 'center',
-            }}>{dragonball.address}</Text>
+            }}>{dragonballItem.address}</Text>
 
             <View style ={{
                     display: 'flex',
@@ -62,7 +61,7 @@ export default function DragonBallCard({dragonball}) {
                 color: '#fff',
                 fontSize: 10,
                 padding: 3
-                }} >{dragonball.category}</Text>
+                }} >{dragonballItem.category}</Text>
             </View>
         </View>
     </View>
